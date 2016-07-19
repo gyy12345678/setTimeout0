@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	for(var i=0;i<10;i++){
+		console.log(i);//123456789
+		setTimeout(function(){
+			console.log('--'+i);//10个10
+		},0)///相当于又开了一个新线程
+	}
+</script>
+</body>
+</html>
